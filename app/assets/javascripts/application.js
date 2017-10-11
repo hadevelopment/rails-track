@@ -16,5 +16,9 @@
 //= require jquery_ujs
 //= require jquery-ui/widgets/draggable
 //= require jquery-ui/widgets/sortable
+//= require vue
+//= require vue-router 
+//= require vue-resource 
+//= require vuex 
 //= require_tree .
 

@@ -30,10 +30,20 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+#Normalize
+gem 'normalize-rails', '~> 4.1', '>= 4.1.1'
+
 #Bundel Jquery
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'rails_sortable'
+
+#Vue
+gem 'vue-rails', '~> 2.2', '>= 2.2.4'
+
+#Knockout
+gem 'knockout-rails', '~> 1.0', '>= 1.0.1'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

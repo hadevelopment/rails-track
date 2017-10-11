@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :employees
   resources :tasks do
-  	resources :task_items
+  	resources :items
   end
   resources :articles do
   	resources :comments
