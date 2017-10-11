@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 #Normalize
-gem 'normalize-rails', '~> 4.1', '>= 4.1.1'
+gem 'normalize-rails'
 
 #Bundel Jquery
 gem 'jquery-rails'
