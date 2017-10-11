@@ -1,22 +1,28 @@
-<h1>Listing articles</h1>
- 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-  </tr>
- 
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article),
-               method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
+<div class="blog-app">
+    <div class="blog-header">
+       <div class="title">
+            <h1>All Articles</h1>
+       </div>
+        <div class="blog-actions">
+            <%= link_to 'New article', new_article_path %>
+        </div>
+    </div>
+    <div class="blog-content">
+        <% @articles.each do |article| %>
+            <div class="article"> 
+                <div class="article-title">
+                    <%= article.title %>
+                </div>
+                <div class="article-content">
+                    <%= article.text %>
+              <%= link_to 'Show', article_path(article) %>
+              <%= link_to 'Edit', edit_article_path(article) %>
+              <%= link_to 'Destroy', article_path(article),
+                       method: :delete,
+                      data: { confirm: 'Are you sure?' } %>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>
 
-    </tr>
-  <% end %>
-</table>
-<%= link_to 'New article', new_article_path %>

@@ -1,19 +1,37 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.task-container {
+.blog-app {
+    min-height: 100vh;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    .task {
+    flex-flow: column;
+    .blog-header {
+        min-height: 35vh;
+        display: flex;
+        .title {
+            flex: 1 0 75%;
+            display: flex;
+            align-items: center;
+            font-size: 8vw;
+            h1 {
+                padding-left: 4rem;
+            }
+        }
+        .blog-actions {
+            flex: 1 0 25%;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .blog-content {
+        min-height: 65vh;
         display: flex;
         flex-flow: column;
-        flex: 1;
-        min-width: 30vw;
-        justify-content: space-around;
-        min-height:40vh;
-        .task-header {}
-        .task-body {}
-        .task-foo {}
+        .article {
+            max-height: 25vh;
+            min-height: 25vh;
+            flex: 1;
+            margin: 0.2rem 0.5rem;
+        }
     }
 }
