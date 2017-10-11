@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171011005012) do
+ActiveRecord::Schema.define(version: 20171010042036) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -28,12 +28,12 @@ ActiveRecord::Schema.define(version: 20171011005012) do
     t.index ["article_id"], name: "index_comments_on_article_id"
   end
 
-  create_table "items", force: :cascade do |t|
+  create_table "task_items", force: :cascade do |t|
     t.string "title"
     t.integer "task_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["task_id"], name: "index_items_on_task_id"
+    t.index ["task_id"], name: "index_task_items_on_task_id"
   end
 
   create_table "tasks", force: :cascade do |t|

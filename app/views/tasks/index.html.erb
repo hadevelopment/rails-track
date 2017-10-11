@@ -8,12 +8,7 @@
     <% @tasks.each do |task| %>
     <div id="drag" class="task ui-draggable">
       <div class="task-header">
-        <h3><%= task.title %></h3>
-        <ul>
-           <% task.items.each do |items| %>
-            <li> <%= items.title %></li>
-          <% end %>
-        </ul>
+        <%= task.title %>
       </div>
       <div class="task-body">
       </div>

@@ -1,0 +1,10 @@
+<%= form_with(model: [ @task, @task.task_item.build ]) do |f|%>
+<div class="controls">
+  <%= f.text_field :title %>
+</div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+ 
+
