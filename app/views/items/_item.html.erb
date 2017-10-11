@@ -1,0 +1,11 @@
+ <div class="item-container">
+	 <div class="title">
+	 	- <%= item.title %>
+	 </div>
+	<div class="actions">
+		<%= link_to 'Delete' , [item.task, item],
+		               method: :delete,
+		               data: { confirm: 'Are you sure?' } %>	
+	</div> 	
+</div>
+  

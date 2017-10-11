@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tasks</h1>
+<%= link_to 'New Task', new_task_path %>
+
+<div id="sort-task" class="task-container">
+  
+    <% @tasks.each do |task| %>
+    <div id="drag" class="task ui-draggable">
+      <div class="task-header">
+        <h3><%= task.title %></h3>
+        <ul>
+           <% task.items.each do |items| %>
+            <li> <%= items.title %></li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="task-body">
+      </div>
+      <div class="task-foo">
+        <%= link_to 'Show', task %>
+        <%= link_to 'Edit', edit_task_path(task) %>
+        <%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+
+    <% end %>
+</div>
+

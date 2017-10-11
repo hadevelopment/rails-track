@@ -1,0 +1,19 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.task-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    .task {
+        display: flex;
+        flex-flow: column;
+        flex: 1;
+        min-width: 30vw;
+        justify-content: space-around;
+        min-height:40vh;
+        .task-header {}
+        .task-body {}
+        .task-foo {}
+    }
+}

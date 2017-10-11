@@ -1,0 +1,9 @@
+<%= form_with(model: [ @task, @task.items.build ]) do |form|%>
+  <p>
+    <%= form.label :Title %><br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

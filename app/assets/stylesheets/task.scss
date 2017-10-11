@@ -1,0 +1,47 @@
+// Place all the styles related to the task controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.task-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    .task {
+        display: flex;
+        flex-flow: column;
+        flex: 1;
+        min-width: 25vw;
+        max-width: 25vw;
+        justify-content: space-around;
+        min-height: 40vh;
+        box-shadow: 0 0 0 0.5px black;
+        padding: 1rem;
+        margin: 4vh;
+        background-color: #FFF;
+        border-radius: 0.2rem;
+        .task-header {
+            flex: 1 1 10%;
+        }
+        .task-body {
+            flex: 1 1 80%;
+        }
+        .task-foo {
+            flex: 1 1 20%;
+        }
+    }
+}
+.task-show{
+    display: flex;
+    min-height: 90vh;
+    .task-title{
+        position: absolute;
+    }
+    .task-info{
+        flex: 1 0 30%;
+        border:1px solid;
+        .items-actions{}
+        .items{}
+    }
+    .task-config{
+        flex: 1 0 70%;
+    }
+}
